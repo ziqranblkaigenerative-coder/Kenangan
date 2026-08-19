@@ -1,0 +1,6 @@
+{
+  "name": "Kartu Ucapan Persahabatan SMA (2023-2026)",
+  "description": "Kartu ucapan interaktif dan album kenangan foto SMA tahun 2023 hingga 2026 sebagai ungkapan terima kasih untuk sahabat tercinta.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FDFBF7;
+    color: #4A453F;
+  }
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-note {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Scrapbook & Polaroid subtle paper styling in Natural Tones */
+.polaroid-card {
+  background-color: #ffffff;
+  border: 1px solid #E9E5D9;
+  box-shadow: 0 8px 20px -4px rgba(74, 69, 63, 0.08), 0 4px 6px -2px rgba(74, 69, 63, 0.04);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.polaroid-card:hover {
+  transform: translateY(-4px) rotate(0deg) !important;
+  box-shadow: 0 16px 28px -6px rgba(74, 69, 63, 0.12), 0 8px 12px -3px rgba(74, 69, 63, 0.06);
+  border-color: #CCD5AE;
+}
+
+/* Washi Tape in Natural Sage & Earth Tones */
+.washi-tape-top {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 90px;
+  height: 22px;
+  background: rgba(233, 237, 198, 0.85);
+  backdrop-filter: blur(2px);
+  border-left: 2px dashed rgba(169, 179, 136, 0.6);
+  border-right: 2px dashed rgba(169, 179, 136, 0.6);
+  box-shadow: 0 1px 3px rgba(74, 69, 63, 0.08);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.washi-tape-corner {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  transform: rotate(35deg);
+  width: 65px;
+  height: 20px;
+  background: rgba(212, 163, 115, 0.65);
+  box-shadow: 0 1px 2px rgba(74, 69, 63, 0.06);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Background paper grid / grain */
+.bg-grid-pattern {
+  background-color: #FDFBF7;
+  background-size: 28px 28px;
+  background-image: 
+    linear-gradient(to right, rgba(109, 122, 106, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(109, 122, 106, 0.04) 1px, transparent 1px);
+}
+
+.letter-paper {
+  background-color: #FEFAE0;
+  background-image: radial-gradient(#E9E5D9 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+
